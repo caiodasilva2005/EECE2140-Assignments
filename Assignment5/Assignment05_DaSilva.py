@@ -42,7 +42,17 @@ class BasicMathOperations:
         return math.pow(base, exponent)
     
     def ArgumentType(self, arg):
-        return type(arg)
+        try:
+            newArg = int(arg)
+        except ValueError:
+            try:
+                newArg = float(arg)
+            except ValueError:
+                newArg = arg
+        if arg == "True" or arg == "False":
+            newArg = bool(arg)
+
+        return type(newArg)
     
 def main():
 
