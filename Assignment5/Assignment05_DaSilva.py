@@ -39,7 +39,7 @@ class BasicMathOperations:
         return width * height
     
     def Power(self, base, exponent):
-        return math.pow(base, exponent)
+        return base ** exponent
     
     def ArgumentType(self, arg):
         try:
