@@ -24,7 +24,7 @@ class BasicMathOperations:
         return num ** 2
     
     def Factorial(self, num):
-        return math.factorial(num)
+        return "{}!: {}".format(num, math.factorial(num))
     
     def Counting(self, start, end):
         if (start > end):
@@ -69,7 +69,8 @@ def main():
     print("8. Rectangle Area")
     print("9. Number To Power")
     print("10. Type") 
-    print("11. Quit Menu") 
+    print("11. Quit Menu")
+    print("==========================================") 
     
     print() 
 
