@@ -24,7 +24,7 @@ class BasicMathOperations:
         return num ** 2
     
     def Factorial(self, num):
-        return "{}!: {}".format(num, math.factorial(num))
+        return math.factorial(num)
     
     def Counting(self, start, end):
         if (start > end):
@@ -99,11 +99,11 @@ def main():
         elif (userInput == "4"):
             print("~ Square Number ~")
             num = int(input("Enter A Number: "))
-            print(mathOps.SquareNumber(num))
+            print("{}^2: {}".format(num, mathOps.SquareNumber(num)))
         elif (userInput == "5"):
             print("~ Factorial Of Number ~")
             num = int(input("Enter A Number: "))
-            print(mathOps.Factorial(num))
+            print("{}!: {}".format(num, mathOps.Factorial(num)))
         elif (userInput == "6"):
             print("~ Count ~")
             start = int(input("Enter Start Value: "))
