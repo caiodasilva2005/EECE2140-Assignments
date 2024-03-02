@@ -84,13 +84,13 @@ def main():
             print(mathOps.GreetUser(firstName, lastName))
         elif (userInput == "2"):
             print("~ Add Numbers ~")
-            num1 = int(input("Enter Number 1: "))
-            num2 = int(input("Enter Number 2: "))
+            num1 = float(input("Enter Number 1: "))
+            num2 = float(input("Enter Number 2: "))
             print ("{} + {} = {}".format(num1, num2, mathOps.AddNumbers(num1, num2)))
         elif (userInput == "3"):
             print("~ Perform Operation ~")
-            num1 = int(input("Enter Number 1: "))
-            num2 = int(input("Enter Number 2: "))
+            num1 = float(input("Enter Number 1: "))
+            num2 = float(input("Enter Number 2: "))
             operation = input("Enter An Operation [+, -, *, /]: ")
             while (mathOps.PerformOperation(num1, num2, operation) == None):
                 print("Invalid Operation.")
@@ -98,7 +98,7 @@ def main():
             print("{} {} {} = {}".format(num1, operation, num2, mathOps.PerformOperation(num1, num2, operation)))
         elif (userInput == "4"):
             print("~ Square Number ~")
-            num = int(input("Enter A Number: "))
+            num = float(input("Enter A Number: "))
             print("{}^2: {}".format(num, mathOps.SquareNumber(num)))
         elif (userInput == "5"):
             print("~ Factorial Of Number ~")
@@ -111,18 +111,18 @@ def main():
             print("Counting From {} to {}: {}".format(start, end, mathOps.Counting(start, end)))
         elif (userInput == "7"):
             print("~ Calculate Hypotnuse ~")
-            leg1 = int(input("Enter Leg 1: "))
-            leg2 = int(input("Enter Leg 2: "))
+            leg1 = float(input("Enter Leg 1: "))
+            leg2 = float(input("Enter Leg 2: "))
             print("Hypotnuse Of Triangle With Sides {} And {}: {}".format(leg1, leg2, mathOps.ComputeHypotnuse(leg1, leg2)))
         elif (userInput == "8"):
             print("~ Rectangle Area ~")
-            width = int(input("Enter Width: "))
-            height = int(input("Enter Height: "))
+            width = float(input("Enter Width: "))
+            height = float(input("Enter Height: "))
             print("Area Of Rectangle With Width Of {} And Height Of {}: {}". format(width, height, mathOps.RectangleArea(width, height)))
         elif (userInput == "9"):
             print("~ Number To Power ~")
-            base = int(input("Enter Base: "))
-            exponent = int(input("Enter Exponent: "))
+            base = float(input("Enter Base: "))
+            exponent = float(input("Enter Exponent: "))
             print("{} To The Power Of {}: {}".format(base, exponent, mathOps.Power(base, exponent)))
         elif (userInput == "10"):
             print("~ Type ~")
