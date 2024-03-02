@@ -43,3 +43,20 @@ class BasicMathOperations:
     
     def ArgumentType(self, arg):
         return type(arg)
+    
+def main():
+
+    mathOps = BasicMathOperations()
+    print("========== CHOOSE AN OPTION =============")
+    print("1. Greet")
+    print("2. Add Numbers")
+    print("3. Perform Operation")
+    print("4. Square Number")
+    print("5. Factorial Of Number")
+    print("6. Count")
+    print("7. Calculate Hypotnuse")
+    print("8. Rectangle Area")
+    print("9. Number to a Power")
+    print("10. Return Type")   
+
+main()
